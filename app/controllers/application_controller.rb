@@ -10,4 +10,12 @@ class ApplicationController < ActionController::Base
       @current_user = nil
     end
   end
+
+  def require_user
+    unless current_user
+      respond_to do |format|
+        format.html {redirect_to login_path}
+      end
+    end
+  end
 end
