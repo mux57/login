@@ -81,10 +81,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (12.3.2)
     rdoc (4.3.0)
-    rspec (3.8.0)
-      rspec-core (~> 3.8.0)
-      rspec-expectations (~> 3.8.0)
-      rspec-mocks (~> 3.8.0)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
     rspec-expectations (3.8.2)
@@ -92,6 +88,14 @@ GEM
       rspec-support (~> 3.8.0)
     rspec-mocks (3.8.0)
       diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.8.0)
+    rspec-rails (3.8.2)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
     sass (3.2.19)
@@ -135,7 +139,7 @@ DEPENDENCIES
   jquery-rails
   pry
   rails (= 4.1.10)
-  rspec
+  rspec-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
